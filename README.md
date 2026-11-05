@@ -1,5 +1,7 @@
 # getwifi
 
+[![CI](https://github.com/sjp/getwifi/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/sjp/getwifi/actions/workflows/ci.yml)
+
 ## CLI Commands
 
 - `npm ci`: Installs dependencies
