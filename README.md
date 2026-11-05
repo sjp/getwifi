@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/sjp/getwifi/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/sjp/getwifi/actions/workflows/ci.yml)
 
+Create WiFi QR codes in seconds at **[sjp.github.io/getwifi](https://sjp.github.io/getwifi/)**.
+
 ## CLI Commands
 
 - `npm ci`: Installs dependencies
