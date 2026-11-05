@@ -6,7 +6,7 @@ import { LanguageOption } from "./language-option";
 
 export const LanguageSelector = () => {
   const { LL, locale, setLocale } = useI18nContext();
-  const title = `${LL.htmlTitle()} - getwifi.link`;
+  const title = `${LL.htmlTitle()} - getwifi`;
   useDocumentTitle(title);
 
   return (

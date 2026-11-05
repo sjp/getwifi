@@ -1,4 +1,4 @@
-# getwifi.link
+# getwifi
 
 ## CLI Commands
 

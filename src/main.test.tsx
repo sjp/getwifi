@@ -11,7 +11,7 @@ describe("main", () => {
   it("prerenders the app to HTML", async () => {
     const { prerender } = await import("./main");
     const { html } = await prerender();
-    expect(html).toContain("getwifi.link");
+    expect(html).toContain("getwifi");
     expect(html).toContain("SSID / Network ID");
   });
 

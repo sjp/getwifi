@@ -18,7 +18,7 @@ export const Header = () => {
   return (
     <header>
       <div class="container header-bar">
-        <strong>getwifi.link</strong>
+        <strong>getwifi</strong>
         <div class="header-actions">
           <Classic
             title={LL.themeToggle()}

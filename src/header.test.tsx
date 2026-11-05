@@ -33,7 +33,7 @@ describe("Header", () => {
 
   it("sets the document title", () => {
     renderWithI18n(<Header />);
-    expect(document.title).toBe("WiFi QR Codes in Seconds - getwifi.link");
+    expect(document.title).toBe("WiFi QR Codes in Seconds - getwifi");
   });
 
   it("switches language from the selector", async () => {
