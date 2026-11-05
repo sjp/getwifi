@@ -24,11 +24,11 @@ describe("Header", () => {
 
     fireEvent.click(toggle);
     expect(document.documentElement.dataset.theme).toBe("dark");
-    expect(window.localStorage.getItem("theme")).toBe("dark");
+    expect(window.localStorage.getItem("getwifi:theme")).toBe("dark");
 
     fireEvent.click(toggle);
     expect(document.documentElement.dataset.theme).toBe("light");
-    expect(window.localStorage.getItem("theme")).toBeNull();
+    expect(window.localStorage.getItem("getwifi:theme")).toBeNull();
   });
 
   it("sets the document title", () => {

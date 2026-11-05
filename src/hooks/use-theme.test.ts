@@ -64,7 +64,7 @@ describe("useTheme", () => {
 
   it("prefers a stored theme over the system preference", () => {
     mockMatchMedia(false);
-    window.localStorage.setItem("theme", "dark");
+    window.localStorage.setItem("getwifi:theme", "dark");
     const { result } = renderHook(() => useTheme());
     expect(result.current.theme).toBe("dark");
     expect(result.current.systemTheme).toBe("light");
@@ -72,7 +72,7 @@ describe("useTheme", () => {
 
   it("ignores invalid stored values", () => {
     mockMatchMedia(false);
-    window.localStorage.setItem("theme", "purple");
+    window.localStorage.setItem("getwifi:theme", "purple");
     const { result } = renderHook(() => useTheme());
     expect(result.current.theme).toBe("light");
   });
@@ -86,13 +86,13 @@ describe("useTheme", () => {
     });
 
     expect(result.current.theme).toBe("dark");
-    expect(window.localStorage.getItem("theme")).toBe("dark");
+    expect(window.localStorage.getItem("getwifi:theme")).toBe("dark");
     expect(document.documentElement.dataset.theme).toBe("dark");
   });
 
   it("clears the stored theme when choosing the system preference", async () => {
     mockMatchMedia(false);
-    window.localStorage.setItem("theme", "dark");
+    window.localStorage.setItem("getwifi:theme", "dark");
     const { result } = renderHook(() => useTheme());
 
     await act(() => {
@@ -100,7 +100,7 @@ describe("useTheme", () => {
     });
 
     expect(result.current.theme).toBe("light");
-    expect(window.localStorage.getItem("theme")).toBeNull();
+    expect(window.localStorage.getItem("getwifi:theme")).toBeNull();
   });
 
   it("still works when storage is unavailable", async () => {

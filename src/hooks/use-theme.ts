@@ -3,7 +3,7 @@ import { useCallback, useEffect, useLayoutEffect, useState } from "preact/hooks"
 export type Theme = "light" | "dark";
 
 // Keep in sync with the inline pre-paint script in index.html.
-const STORAGE_KEY = "theme";
+const STORAGE_KEY = "getwifi:theme";
 
 const isTheme = (value: unknown): value is Theme => value === "light" || value === "dark";
 
