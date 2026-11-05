@@ -8,7 +8,7 @@ it("credits the author and links to the source", () => {
   expect(screen.getByText("Built by sjp").getAttribute("href")).toBe("https://sjp.co.nz");
   const links = screen.getAllByRole("link");
   expect(links.map((link) => link.getAttribute("href"))).toContain(
-    "https://github.com/sjp/getwifi-web",
+    "https://github.com/sjp/getwifi",
   );
   for (const link of links) {
     expect(link.getAttribute("rel")).toBe("noreferrer noopener");

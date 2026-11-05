@@ -10,7 +10,7 @@ export const Footer = () => {
         {LL.authorship({ author: "sjp" })}
       </a>{" "}
       <a
-        href="https://github.com/sjp/getwifi-web"
+        href="https://github.com/sjp/getwifi"
         class="secondary"
         target="_blank"
         rel="noreferrer noopener"
